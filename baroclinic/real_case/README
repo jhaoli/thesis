@@ -1,0 +1,9 @@
+Extract variable “SST” from in.nc (ref)
+$ ncks -v SST in.nc out.nc
+Delete variable “lev” from in.nc (ref)
+$ ncks -C -O -x -v lev in.nc out.nc
+Delete dimension “lev” from in.nc (ref)
+$ ncwa -a lev in.nc out.nc
+Repeack the out.nc after averaging-out the level dimension with “ncwa”
+$ ncpdq in.nc out.nc
+
