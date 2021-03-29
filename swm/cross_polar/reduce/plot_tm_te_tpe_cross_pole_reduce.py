@@ -8,9 +8,9 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from netCDF4 import Dataset
 
-file0 = "./cp.swm.360x181.dt6.upwind3_wgt0.25.h0.nc"
-file1 = "./cp.swm.360x181.dt60.reduce_pv_off.upwind3_wgt0.25.h0.nc"
-file2 = "./cp.swm.360x181.reduce.dt6.upwind3_wgt0.25.h0.nc" 
+file0 = "./cp.swm.360x181.dt6.upwind.h0.nc"
+file1 = "./cp.swm.360x181.dt60.upwind.h0.nc"
+file2 = "./cp.swm.360x181.reduce_dt6.upwind.h0.nc" 
 
 f0    = Dataset(file0, 'r')
 tm0   = f0.variables['tm'][:]

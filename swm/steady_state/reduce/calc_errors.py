@@ -40,7 +40,7 @@ ax.plot(x, L2, color='red', linewidth=lw, marker='', label = r'$\ell_2$')
 
 ax.plot(x, Linf, color='blue', linewidth=lw, marker='', label = r'$\ell_{\infty}$')
 
-#ax.set_ylim(1.0e-8, 1.0e-4)
+ax.set_ylim(1.0e-8, 1.0e-4)
 ax.set_xlim(0, 365)
 ax.set_xticks(np.arange(0, len(time), 10), minor = True)
 ax.set_yscale("log")

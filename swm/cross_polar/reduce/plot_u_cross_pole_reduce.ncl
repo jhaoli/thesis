@@ -2,8 +2,8 @@
 load "./plot_polar_mod.ncl"
 ;
 begin
-  file0 = "./cp.swm.360x181.dt6.upwind3_wgt0.25.h0.nc"
-  file1 = "./cp.swm.360x181.dt60.reduce_pv_off.upwind3_wgt0.25.h0.nc"
+  file0 = "./cp.swm.360x181.dt6.upwind.h0.nc"
+  file1 = "./cp.swm.360x181.dt60.upwind.h0.nc"
 
   f0 = addfile(file0, "r")
   u0 = f0->u
